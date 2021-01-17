@@ -1,0 +1,1 @@
+This resume project is built with HTML5, CSS and Bootstrap 4. All components used in the template are well commented based on themeforest.net. This is my first time making project and designing UI as a FE developer. It's just for getting experience and being used to work with git.  
