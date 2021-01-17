@@ -1,4 +1,6 @@
-
+body {
+	font-family: Poppins, sans-serif;
+}
 /*all a*/
 a:hover {
 	opacity: 0.6;
@@ -13,9 +15,9 @@ a:hover {
 	margin-right: 0.8em;
 }
 .menu {
-	font-family: Poppins, sans-serif;
 	text-transform: uppercase;
-	font-size: 1.2rem;
+	font-size: 0.9rem;
+	font-weight: 600;
 	width: 100vw;
 	height: 100vh;
 	position: fixed;
@@ -37,7 +39,6 @@ a:hover {
 }
 .menu .list-menu ul li a{
 	text-align: left;
-	letter-spacing: 6px;
 }
 .menu .list-contact {
 	font-size: 0.9rem;
@@ -46,6 +47,49 @@ a:hover {
 	align-items: center;
 }
 .menu .list-contact ul li a{
-	text-align: right;
+	text-align: left;
+}
+.nav .nav-item-title {
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: left;
+	letter-spacing: 3px;
+	word-spacing: 5px;
+	line-height: 4em;
+	margin-left: 15px;
+}
 }
 /*end main menu*/
+/*left-aside*/
+.left-aside {
+	transform: rotate(-90deg);
+}
+.left-text 
+{
+	font-size: 1em;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	position: relative;
+	width: 250px;	
+}
+.left-text:before {
+	content: '';
+	width: 30px;
+	height: 1px;
+	background-color: #e24727;
+	position: absolute;
+	top: 11px;
+	left: 20px;
+}
+.left-text:after {
+	content: '';
+	width: 30px;
+	height: 1px;
+	background-color: #e24727;
+	position: absolute;
+	top: 11px;
+	right: 20px;
+}
+/*left-aside*/
