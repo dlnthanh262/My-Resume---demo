@@ -1,0 +1,51 @@
+
+/*all a*/
+a:hover {
+	opacity: 0.6;
+	font-size: 90%;
+}
+/*main menu*/
+.menu-icon {
+	font-size: 2rem;
+	color: #685c5c;
+	float: right;
+	margin-top: 0.5em;
+	margin-right: 0.8em;
+}
+.menu {
+	font-family: Poppins, sans-serif;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	background-color: #222;
+	opacity: 1;
+	display: none;
+}
+.menu ul li a {
+	color: #DBDBDB;
+	letter-spacing: 3px;
+	word-spacing: 5px;
+	line-height: 4em;
+}
+.menu .list-menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.menu .list-menu ul li a{
+	text-align: left;
+	letter-spacing: 6px;
+}
+.menu .list-contact {
+	font-size: 0.9rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.menu .list-contact ul li a{
+	text-align: right;
+}
+/*end main menu*/

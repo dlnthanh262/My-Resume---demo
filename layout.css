@@ -1,33 +1,41 @@
 .header {
 	height: 10%;
-	width: 100%;
+	width: 100vw;
 	border:1px solid #3e3e3e;
 	position: fixed;
 	top:0;
+	right: 0;
 	display: block;
 	text-align: center;
 }
-.main {
-	display: grid;
-	grid-template-columns: 1fr 10fr 2fr;
+/*aside*/
+.aside {
 	background-color: #DDD;
+}
+.aside .aside-left {
+	border: 1px solid red;
+	position: fixed;
+	top: 30%;
+	left: 0;
+	height: 20rem;
+} 
+.aside .aside-right {
+	border: 1px solid blue;
+	position: fixed;
+	top: 30%;
+	right: 0;
+	height: 20rem;
+}
+/*aside*/
+/*main*/
+.main {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.main .content {
+	border: 1px solid green;
+	background-color: #fff;
 	height: 100vh;
 }
-.main .aside-left {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	border:1px solid red;
-	height: 100%;
-} 
-.main .content {
-	grid-column-start: 2;
-	grid-column-end: 12;
-	border: 1px solid yellow;
-	height: 100%;
-}
-.main .aside-right {
-	grid-column-start: 12;
-	grid-column-end: 14;
-	border: 1px solid blue;
-	height: 100%;
-}
+/*main*/
