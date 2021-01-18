@@ -2,94 +2,187 @@ body {
 	font-family: Poppins, sans-serif;
 }
 /*all a*/
-a:hover {
-	opacity: 0.6;
-	font-size: 90%;
-}
+	a:hover {
+		opacity: 0.6;
+		font-size: 90%;
+	}
 /*main menu*/
-.menu-icon {
-	font-size: 2rem;
-	color: #685c5c;
-	float: right;
-	margin-top: 0.5em;
-	margin-right: 0.8em;
-}
-.menu {
-	text-transform: uppercase;
-	font-size: 0.9rem;
-	font-weight: 600;
-	width: 100vw;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	background-color: #222;
-	opacity: 1;
-	display: none;
-}
-.menu ul li a {
-	color: #DBDBDB;
-	letter-spacing: 3px;
-	word-spacing: 5px;
-	line-height: 4em;
-}
-.menu .list-menu {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
-.menu .list-menu ul li a{
-	text-align: left;
-}
-.menu .list-contact {
-	font-size: 0.9rem;
+	.menu-icon {
+		font-size: 2rem;
+		color: #000;
+		float: right;
+		margin-top: 0.5em;
+		margin-right: 0.7em;
+	}
+	.menu-icon:hover {
+		opacity: 0.5;
+	}
+	.menu {
+		text-transform: uppercase;
+		font-size: 0.9rem;
+		font-weight: 600;
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		background-color: #222;
+		opacity: 1;
+		display: none;
+	}
+	.menu ul li a {
+		color: #DBDBDB;
+		letter-spacing: 3px;
+		word-spacing: 5px;
+		line-height: 4em;
+	}
+	.menu .list-menu {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.menu .list-menu ul li a{
+		text-align: left;
+	}
+	.menu .list-contact {
+		font-size: 0.9rem;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.menu .list-contact ul li a{
+		text-align: left;
+	}
+	.nav .nav-item-title {
+		color: #fff;
+		font-size: 1.2rem;
+		font-weight: bold;
+		text-align: left;
+		letter-spacing: 3px;
+		word-spacing: 5px;
+		line-height: 4em;
+		margin-left: 15px;
+	}
+/*signal*/
+	.signal {
+		width: 10%;
+		height: 100%;
+		margin-top: 10px;
+		float: left;
+		background-image: url(./img/sign.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+/*left-aside*/
+	.left-aside {
+		transform: rotate(-90deg);
+	}
+	.left-text 
+	{
+		font-size: 0.9em;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		position: relative;
+		width: 250px;	
+	}
+	.left-text:before {
+		content: '';
+		width: 30px;
+		height: 1px;
+		background-color: #e24727;
+		position: absolute;
+		top: 11px;
+		left: 20px;
+	}
+	.left-text:after {
+		content: '';
+		width: 30px;
+		height: 1px;
+		background-color: #e24727;
+		position: absolute;
+		top: 11px;
+		right: 20px;
+	}
+/*right-aside*/
+	.smenu-title-group {
+		list-style: none;
+		width: 80px;
+		float: right;
+		padding: 0;
+		margin: 0;
+	}
+	.smenu-title-group li {
+		text-align: right;
+		visibility: hidden;
+		text-transform: uppercase;
+		font-size: 0.7rem;
+		line-height: 1.5rem;
+		letter-spacing: 1px;	
+	}
+	.smenu-group {
+		list-style: none;
+		padding-top: 10px;
+		width: 45px;
+		padding: 12px 0;
+		transform: rotate(180deg);
+	}
+	.smenu-item {
+		margin-bottom: 19px;
+	}
+	.smenu-group li:last-of-type {
+		margin-bottom: 0;
+	} 
+	.smenu-line {
+		height: 4px;
+		width: 20px;
+		background-color: #000;
+		transition: all 500ms;
+	}
+	.active .smenu-line{
+		width: 35px;
+		height: 2px;
+		background-color: red;
+	}
+	/*.smenu-link:hover .smenu-line{
+		width: 35px;
+		height: 3px;
+		background-color: red;
+	}*/
+	.smenu-link:hover #smenu-title>li{
+		visibility: visible;
+	}
+/*home*/
+.home {
+	background-image: url('./img/bg-home2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 }
-.menu .list-contact ul li a{
-	text-align: left;
+.intro {
+	margin-left: 15%;
 }
-.nav .nav-item-title {
-	color: #fff;
-	font-size: 1.2rem;
-	font-weight: bold;
-	text-align: left;
-	letter-spacing: 3px;
-	word-spacing: 5px;
-	line-height: 4em;
-	margin-left: 15px;
+.intro h1,h2 {
+	font-weight: 200;
+	margin: 0.4em 0;
+  	color: #343A40;
 }
+.intro h1 { 
+	font-size: 3.5em; 
+	letter-spacing: 0.1em;
 }
-/*end main menu*/
-/*left-aside*/
-.left-aside {
-	transform: rotate(-90deg);
+.intro h2 {
+  	color: #e24727;
+  	font-size: 2em;
 }
-.left-text 
-{
-	font-size: 1em;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	position: relative;
-	width: 250px;	
+.intro h2 span {
+	color: #343A40;
 }
-.left-text:before {
-	content: '';
-	width: 30px;
-	height: 1px;
-	background-color: #e24727;
-	position: absolute;
-	top: 11px;
-	left: 20px;
+.intro .intro-frame {
+	margin-bottom: 3em;
 }
-.left-text:after {
-	content: '';
-	width: 30px;
-	height: 1px;
-	background-color: #e24727;
-	position: absolute;
-	top: 11px;
-	right: 20px;
+.intro .nav .nav-item .nav-link {
+	color: #000;
 }
-/*left-aside*/

@@ -11,6 +11,7 @@
 </head>
 <body>
 	<section class="header bg-transparent">
+		<div class="signal"></div>
 		<i class="fas fa-bars menu-icon" id="menu-icon"></i>
 		<div class="row menu" id="main-menu">
 			<div class="list-menu col-md-6 col-sm-12">
@@ -42,12 +43,83 @@
 			<div class="aside-left bg-transparent col-2">
 				<div class="left-text">home</div>
 			</div>			
-			<div class="aside-right bg-transparent col-1"></div>
+			<div class="aside-right bg-transparent col-1">
+				<div class="row">
+					<div class="col-6 p-0">
+						<ul class="smenu-title-group">
+							<li id="smenu-title-5">Home</li>
+							<li id="smenu-title-4">About Me</li>
+							<li id="smenu-title-3">Skills</li>
+							<li id="smenu-title-2">Target</li>
+							<li id="smenu-title-1">Contact</li>
+						</ul>
+					</div>
+					<div class="col-6 p-0">
+						<ul class="smenu-group">
+							<li class="smenu-item">				
+								<a class="smenu-link" data-id="5" href="#contact" >
+								<div class="smenu-line"></div>		
+							</a></li>			
+							<li class="smenu-item">				
+								<a class="smenu-link" data-id="4" href="#target" >
+								<div class="smenu-line"></div>
+							</a></li>
+							<li class="smenu-item">				
+								<a class="smenu-link" data-id="3" href="#skills" >
+								<div class="smenu-line"></div>
+							</a></li>
+							<li class="smenu-item">
+								<a class="smenu-link" data-id="2" href="#aboutme" >
+								<div class="smenu-line"></div>
+							</a></li>
+							<li class="smenu-item">				
+								<a class="smenu-link active" data-id="1" href="#home" >
+								<div class="smenu-line"></div>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
-	<section class="container-fluid">
-		<div class="main">
-			<div class="content"></div>	
+	<section class="container-fluid" style="padding: 0">
+		<div class="home" id="home">
+			<div class="intro">
+				<div class="intro-frame">
+					<h1>I'M Thanh</h1>
+					<h2>A 
+					  <span
+					     class="txt-rotate"
+					     data-period="1000"
+					     data-rotate='[ "Senior Student.", "Web Developer.", "Web Desinger.", "UI Designer." ]'></span>
+					</h2>
+				</div>
+				<div class="intro-quote">
+					<p style="color: #343a40"><q>Life is too important to be taken seriously.</q> - Oscar Wilde</p>
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.facebook.com/dlnthanh">
+								<i class="fab fa-facebook"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.instagram.com/dlnthanh262/">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://mail.google.com/" data-bs-toggle="tooltip" data-bs-placement="top" title="dolenguyetthanh@gmail.com">
+								<i class="fas fa-envelope"></i>
+							</a>
+						</li>
+						<li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="top" title="0374401764">
+							<a class="nav-link disabled" href="#">
+								<i class="fas fa-sms"></i>
+							</a>
+						</li>				
+					<ul>
+				</div>				
+			</div>				
 		</div>	
 	</section>
 <script src="https://kit.fontawesome.com/f1fd6f3e8d.js" crossorigin="anonymous"></script>
