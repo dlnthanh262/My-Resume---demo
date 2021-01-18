@@ -77,7 +77,7 @@ body {
 		float: left;
 		background-image: url(./img/sign.png);
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
 	}
 /*left-aside*/
 	.left-aside {
@@ -160,7 +160,7 @@ body {
 	}
 /*home*/
 	.home {
-		background-image: url('./img/bg-home2.jpg');
+		background-image: url(./img/bg-home2.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
