@@ -1,5 +1,5 @@
 body {
-	font-family: Poppins, sans-serif;
+	font-family: Mulish, sans-serif;
 }
 /*font*/ 
 	.font-dark {
@@ -245,3 +245,25 @@ body {
 	.achieve-item .title {
 		font-size: 1rem;
 	}
+
+/*skills*/
+.nav-skills {
+	list-style: none;
+}
+.nav-skills-item {
+	float:left;
+}
+.nav-skills-link {
+	font-size: 1rem;
+	padding: 5px 10px;
+	margin-right: 2em;
+	text-decoration: none;
+	float:left;
+}
+.nav-skills-link:hover {
+	background-color: #E24727;
+	opacity: 1;
+	color: #fff;
+	border-radius: 15px;
+	font-weight: bold;
+}
