@@ -1,6 +1,13 @@
 body {
 	font-family: Poppins, sans-serif;
 }
+/*font*/ 
+	.font-dark {
+		color: #343a40;
+	}
+	.font-highlight {
+		color: #e24727;
+	}
 /*all a*/
 	a:hover {
 		opacity: 0.6;
@@ -152,37 +159,89 @@ body {
 		visibility: visible;
 	}
 /*home*/
-.home {
-	background-image: url('./img/bg-home2.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-}
-.intro {
-	margin-left: 15%;
-}
-.intro h1,h2 {
-	font-weight: 200;
-	margin: 0.4em 0;
-  	color: #343A40;
-}
-.intro h1 { 
-	font-size: 3.5em; 
-	letter-spacing: 0.1em;
-}
-.intro h2 {
-  	color: #e24727;
-  	font-size: 2em;
-}
-.intro h2 span {
-	color: #343A40;
-}
-.intro .intro-frame {
-	margin-bottom: 3em;
-}
-.intro .nav .nav-item .nav-link {
-	color: #000;
-}
+	.home {
+		background-image: url('./img/bg-home2.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.intro {
+		margin-left: 15%;
+	}
+	.intro h1,h2 {
+		font-weight: 200;
+		margin: 0.4em 0;
+	  	color: #343A40;
+	}
+	.intro h1 { 
+		font-size: 3.5em; 
+		letter-spacing: 0.1em;
+	}
+	.intro h2 {
+	  	color: #e24727;
+	  	font-size: 2em;
+	}
+	.intro h2 span {
+		color: #343A40;
+	}
+	.intro .intro-frame {
+		margin-bottom: 3em;
+	}
+	.intro .nav .nav-item .nav-link {
+		color: #000;
+	}
+/*about me*/
+	.aboutme .info {
+		margin-top: 4.5em;
+	}
+	.aboutme .info .image {
+		background-image: url(./img/avatar.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+	}
+	.aboutme .info .content {
+		padding-left: 2em;
+	}
+	.aboutme .info .content h1 {
+		font-weight: 600;
+		letter-spacing: 0.1em;
+	}
+	.aboutme .info .content p {
+		margin-top: 2em;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+		line-height: 1.5em;
+		font-size: 1.2em;
+	}
+	.aboutme-info-table td {
+		padding: 1em 2em 1em 0;
+	}
+	.aboutme-button {
+		background-color: #e24727;
+		text-decoration: none;
+		color: #fff;
+		padding: 0.7em 1.4em;
+		border-radius: 1.5em;
+		margin-right: 5em;
+	}
+	.achieve-group {
+		margin-top: 3em;
+	}
+	.achieve-item {
+		
+		text-align: center;
+		color: #888;
+	}
+	.achieve-item .icon {
+		font-size: 3rem;
+	}
+	.achieve-item .number {
+		font-size: 1.5rem;
+	}
+	.achieve-item .title {
+		font-size: 1rem;
+	}
