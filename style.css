@@ -88,7 +88,7 @@ body {
 		font-size: 0.9em;
 		text-align: center;
 		text-transform: uppercase;
-		letter-spacing: 4px;
+		letter-spacing: 2px;
 		position: relative;
 		width: 250px;	
 	}
@@ -249,7 +249,6 @@ body {
 	.achieve-item .title {
 		font-size: 1rem;
 	}
-
 /*skills*/
 	.nav-skills {
 		list-style: none;
@@ -384,7 +383,45 @@ body {
 	.work-template {
 		display: none;
 	}
-
+/*target*/
+	.services {
+		margin-top: 2em;
+	}
+	.service-item {
+		padding: 0em 2em 1em 0;
+	}
+	.service-item .service-icon {
+		height: 50%;
+	}
+	.service-item:hover .service-icon {
+		animation-name: spin;
+		animation-duration: 1s;
+	}
+	.service-item .service-content h5{
+		font-family: sans-serif;
+		letter-spacing: 0.03em;
+		font-weight: bold;
+	}
+	.progress-item {
+		margin-top:0;
+	}
+	.progress {
+		opacity: 0.7;
+	}
+@keyframes spin {
+	from{
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+    }
+}
 @keyframes move {
 	0% {left: 20px; top: 10px;}
 	75%{left: 0px; top: 0px;}

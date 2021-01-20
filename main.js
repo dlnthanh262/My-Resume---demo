@@ -1,13 +1,22 @@
+// target _blank for all element a have external href
 // mainmenu
 	$("#menu-icon").click(function() {
 		$("#main-menu").css("display", "flex");
 		$("#aside").css("visibility", "hidden");
 		$(".smenu-line").css("transition", "none");
+		$(".work-item").css({
+			"opacity" : 0,
+			"visibility": "hidden"
+		});
 	});
 	$("#main-menu").click(function() {
 		$("#main-menu").css("display", "none");
 		$("#aside").css("visibility", "visible");
 		$(".smenu-line").css("transition", "all 500ms");
+		$(".work-item").css({
+			"opacity" : 1,
+			"visibility": "visible"
+		});
 	});
 
 // right-side
@@ -113,91 +122,91 @@
 	};
 
 //working-item
-$(".nav-skills-link").click(function() {
-	if($(this).data("filter") === "all") {
-		$(".work-all").css({
-			"display" : "flex"
-		});
-		$(".work-mockup").css({
-			"display" : "none"
-		});
-		$(".work-template").css({
-			"display" : "none"
-		});
-		$(this).css({
-			"background-color": "#E24727",
-			"opacity": 1,
-			"color": "#fff",
-			"border-radius": "20px"
-		});
-		$("#work-template").css({
-			"background-color": "#fff",
-			"opacity": 1,
-			"color": "#343A40",
-			"border-radius": 0
-		});
-		$("#work-mockup").css({
-			"background-color": "#fff",
-			"opacity": 1,
-			"color": "#343A40",
-			"border-radius": 0
-		});
-	}
-	else if($(this).data("filter") === "template") {
-		$(".work-template").css({
-			"display" : "flex"
-		});
-		$(".work-mockup").css({
-			"display" : "none"
-		});
-		$(".work-all").css({
-			"display" : "none"
-		});
-		$(this).css({
-			"background-color": "#E24727",
-			"opacity": 1,
-			"color": "#fff",
-			"border-radius": "20px"
-		});
-		$("#work-all").css({
-			"background-color": "#fff",
-			"opacity": 1,
-			"color": "#343A40",
-			"border-radius": 0
-		});
-		$("#work-mockup").css({
-			"background-color": "#fff",
-			"opacity": 1,
-			"color": "#343A40",
-			"border-radius": 0
-		});
-	}
-	else if($(this).data("filter") === "mockup") {
-		$(".work-template").css({
-			"display" : "none"
-		});
-		$(".work-all").css({
-			"display" : "none"
-		});
-		$(".work-mockup").css({
-			"display" : "flex"
-		});
-		$(this).css({
-			"background-color": "#E24727",
-			"opacity": 1,
-			"color": "#fff",
-			"border-radius": "20px"
-		});
-		$("#work-template").css({
-			"background-color": "#fff",
-			"opacity": 1,
-			"color": "#343A40",
-			"border-radius": 0	});
-		$("#work-all").css({
-			"background-color": "#fff",
-			"opacity": 1,
-			"color": "#343A40",
-			"border-radius": 0
-		});
-	}
-});
+	$(".nav-skills-link").click(function() {
+		if($(this).data("filter") === "all") {
+			$(".work-all").css({
+				"display" : "flex"
+			});
+			$(".work-mockup").css({
+				"display" : "none"
+			});
+			$(".work-template").css({
+				"display" : "none"
+			});
+			$(this).css({
+				"background-color": "#E24727",
+				"opacity": 1,
+				"color": "#fff",
+				"border-radius": "20px"
+			});
+			$("#work-template").css({
+				"background-color": "#fff",
+				"opacity": 1,
+				"color": "#343A40",
+				"border-radius": 0
+			});
+			$("#work-mockup").css({
+				"background-color": "#fff",
+				"opacity": 1,
+				"color": "#343A40",
+				"border-radius": 0
+			});
+		}
+		else if($(this).data("filter") === "template") {
+			$(".work-template").css({
+				"display" : "flex"
+			});
+			$(".work-mockup").css({
+				"display" : "none"
+			});
+			$(".work-all").css({
+				"display" : "none"
+			});
+			$(this).css({
+				"background-color": "#E24727",
+				"opacity": 1,
+				"color": "#fff",
+				"border-radius": "20px"
+			});
+			$("#work-all").css({
+				"background-color": "#fff",
+				"opacity": 1,
+				"color": "#343A40",
+				"border-radius": 0
+			});
+			$("#work-mockup").css({
+				"background-color": "#fff",
+				"opacity": 1,
+				"color": "#343A40",
+				"border-radius": 0
+			});
+		}
+		else if($(this).data("filter") === "mockup") {
+			$(".work-template").css({
+				"display" : "none"
+			});
+			$(".work-all").css({
+				"display" : "none"
+			});
+			$(".work-mockup").css({
+				"display" : "flex"
+			});
+			$(this).css({
+				"background-color": "#E24727",
+				"opacity": 1,
+				"color": "#fff",
+				"border-radius": "20px"
+			});
+			$("#work-template").css({
+				"background-color": "#fff",
+				"opacity": 1,
+				"color": "#343A40",
+				"border-radius": 0	});
+			$("#work-all").css({
+				"background-color": "#fff",
+				"opacity": 1,
+				"color": "#343A40",
+				"border-radius": 0
+			});
+		}
+	});
