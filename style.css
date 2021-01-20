@@ -1,3 +1,8 @@
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+
 body {
 	font-family: Mulish, sans-serif;
 }
@@ -7,6 +12,9 @@ body {
 	}
 	.font-highlight {
 		color: #e24727;
+	}
+	.font-normal {
+		font-family: sans-serif;
 	}
 /*all a*/
 	a:hover {
@@ -210,7 +218,7 @@ body {
 		height: 20em;
 		padding-left: 2em;
 	}
-	.aboutme .info .content h1 {
+	.aboutme .info .content h2 {
 		font-weight: 600;
 		font-family: Poppins, sans-serif;
 	}
@@ -229,8 +237,13 @@ body {
 		text-decoration: none;
 		color: #fff;
 		padding: 0.7em 1.4em;
+		border:none;
 		border-radius: 1.5em;
 		margin-right: 5em;
+	}
+	.aboutme-button:hover {
+		opacity: 0.6;
+		font-size: 90%;
 	}
 	.achieve-group {
 		margin-top: 3em;
@@ -406,8 +419,10 @@ body {
 		margin-top:0;
 	}
 	.progress {
-		opacity: 0.7;
+		opacity: 0.6;
 	}
+/*contact*/
+
 @keyframes spin {
 	from{
         -webkit-transform:rotate(0deg);

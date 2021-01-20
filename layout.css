@@ -66,7 +66,7 @@
 	}
 /*skills*/
 	.skills {
-		margin-top:5%;
+		margin-top:4%;
 		margin-left: 15%;
 		margin-right: 15%;
 	}
@@ -75,6 +75,16 @@
 		margin-top:5%;
 		margin-left: 15%;
 		margin-right: 15%;
+	}
+/*contact*/
+	.contact {
+		margin-top:5%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	#map {
+		width: 400px;
+		height: 20%;
 	}
 
 

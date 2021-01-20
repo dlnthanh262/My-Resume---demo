@@ -8,6 +8,10 @@
 			"opacity" : 0,
 			"visibility": "hidden"
 		});
+		$(".progress").css({
+			"opacity" : 0,
+			"visibility": "hidden"
+		});
 	});
 	$("#main-menu").click(function() {
 		$("#main-menu").css("display", "none");
@@ -15,6 +19,10 @@
 		$(".smenu-line").css("transition", "all 500ms");
 		$(".work-item").css({
 			"opacity" : 1,
+			"visibility": "visible"
+		});
+		$(".progress").css({
+			"opacity" : 0.6,
 			"visibility": "visible"
 		});
 	});
@@ -210,3 +218,5 @@
 			});
 		}
 	});
+
+//google maps
