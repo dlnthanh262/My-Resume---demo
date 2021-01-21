@@ -25,6 +25,21 @@
 		height: 7rem;
 	}
 /*aside*/
+/*theme*/
+	.theme-light{
+		width: 2.5em;
+		height: 2.5em;
+		position: fixed;
+		top: 10%;
+		right: 1.1%;
+	}
+	.theme-dark{
+		width: 2.5em;
+		height: 2.5em;
+		position: fixed;
+		top: 10%;
+		right: 1.1%;
+	}
 /*home*/
 	.home {
 		margin: 0;
@@ -81,10 +96,6 @@
 		margin-top:5%;
 		margin-left: 15%;
 		margin-right: 15%;
-	}
-	#map {
-		width: 400px;
-		height: 20%;
 	}
 
 

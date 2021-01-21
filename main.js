@@ -225,3 +225,26 @@
 			alert("Message sent successfully!")
 		});
 	});
+
+
+//theme
+$(".theme-light").click(function() {
+	$(".theme-light").css({
+			"opacity" : 0,
+			"visibility": "hidden"
+		});
+	$(".theme-dark").css({
+			"opacity" : 1,
+			"visibility": "visible"
+		});
+});
+$(".theme-dark").click(function() {
+	$(".theme-dark").css({
+			"opacity" : 0,
+			"visibility": "hidden"
+		});
+	$(".theme-light").css({
+			"opacity" : 1,
+			"visibility": "visible"
+		});
+});

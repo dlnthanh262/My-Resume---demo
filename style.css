@@ -162,6 +162,26 @@ body {
 	.smenu-link:hover #smenu-title>li{
 		visibility: visible;
 	}
+/*theme*/ 
+	.theme-light{
+		color: #fff;
+		text-align: center;
+		background-color: #e24727;
+		border-radius: 50%;
+		display: inline-block;
+		padding: 0.5em 0.8em;
+		visibility: hidden;
+		opacity: 0;
+	}
+	.theme-dark{
+		color: #fff;
+		text-align: center;
+		background-color: #e24727;
+		border-radius: 50%;
+		display: inline-block;
+		padding: 0.5em 0.8em;
+		transform: rotate(220deg);
+	}
 /*home*/
 	.home {
 		background-image: url(./img/bg-home2.jpg);
