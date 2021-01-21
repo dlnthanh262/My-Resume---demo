@@ -219,4 +219,9 @@
 		}
 	});
 
-//google maps
+//submit-form
+	$(document).ready(function() {
+		$("#form").submit(function() {
+			alert("Message sent successfully!")
+		});
+	});
