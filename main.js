@@ -1,4 +1,16 @@
 // target _blank for all element a have external href
+//some vars
+//1: dark 0: light
+var storageKey = 'theme';
+var storageContent = sessionStorage.getItem(storageKey);
+if(storageContent) {
+	if(storageContent === '0') onThemeLightState();
+	else onThemeDarkState();
+}
+else {
+	storageContent = '0';
+	onThemeLightState();
+} 
 // mainmenu
 	$("#menu-icon").click(function() {
 		$("#main-menu").css("display", "flex");
@@ -12,6 +24,18 @@
 			"opacity" : 0,
 			"visibility": "hidden"
 		});
+		if(storageContent === '0') {
+			$(".theme-dark").css({
+			"opacity" : 0,
+			"visibility": "hidden"
+			});
+		}
+		else {
+			$(".theme-light").css({
+			"opacity" : 0,
+			"visibility": "hidden"
+			});
+		}
 	});
 	$("#main-menu").click(function() {
 		$("#main-menu").css("display", "none");
@@ -25,6 +49,18 @@
 			"opacity" : 0.6,
 			"visibility": "visible"
 		});
+		if(storageContent === '0') {
+			$(".theme-dark").css({
+			"opacity" : 1,
+			"visibility": "visible"
+			});
+		}
+		else {
+			$(".theme-light").css({
+			"opacity" : 1,
+			"visibility": "visible"
+			});
+		}
 	});
 
 // right-side
@@ -148,17 +184,31 @@
 				"border-radius": "20px"
 			});
 			$("#work-template").css({
-				"background-color": "#fff",
+				"background-color": "transparent",
 				"opacity": 1,
-				"color": "#343A40",
 				"border-radius": 0
 			});
 			$("#work-mockup").css({
-				"background-color": "#fff",
+				"background-color": "transparent",
 				"opacity": 1,
-				"color": "#343A40",
 				"border-radius": 0
 			});
+			if(theme == 0) {
+				$("#work-template").css({
+					"color": "#343A40",
+				});
+				$("#work-mockup").css({
+					"color": "#343A40",
+				});
+			}
+			else {
+				$("#work-template").css({
+					"color": "#fff",
+				});
+				$("#work-mockup").css({
+					"color": "#fff",
+				});
+			}
 		}
 		else if($(this).data("filter") === "template") {
 			$(".work-template").css({
@@ -177,17 +227,31 @@
 				"border-radius": "20px"
 			});
 			$("#work-all").css({
-				"background-color": "#fff",
+				"background-color": "transparent",
 				"opacity": 1,
-				"color": "#343A40",
 				"border-radius": 0
 			});
 			$("#work-mockup").css({
-				"background-color": "#fff",
+				"background-color": "transparent",
 				"opacity": 1,
-				"color": "#343A40",
 				"border-radius": 0
 			});
+			if(theme == 0) {
+				$("#work-all").css({
+					"color": "#343A40",
+				});
+				$("#work-mockup").css({
+					"color": "#343A40",
+				});
+			}
+			else {
+				$("#work-all").css({
+					"color": "#fff",
+				});
+				$("#work-mockup").css({
+					"color": "#fff",
+				});
+			}
 		}
 		else if($(this).data("filter") === "mockup") {
 			$(".work-template").css({
@@ -206,16 +270,30 @@
 				"border-radius": "20px"
 			});
 			$("#work-template").css({
-				"background-color": "#fff",
+				"background-color": "transparent",
 				"opacity": 1,
-				"color": "#343A40",
 				"border-radius": 0	});
 			$("#work-all").css({
-				"background-color": "#fff",
+				"background-color": "transparent",
 				"opacity": 1,
-				"color": "#343A40",
 				"border-radius": 0
 			});
+			if(theme == 0) {
+				$("#work-template").css({
+					"color": "#343A40",
+				});
+				$("#work-all").css({
+					"color": "#343A40",
+				});
+			}
+			else {
+				$("#work-template").css({
+					"color": "#fff",
+				});
+				$("#work-all").css({
+					"color": "#fff",
+				});
+			}
 		}
 	});
 
@@ -228,7 +306,8 @@
 
 
 //theme
-$(".theme-light").click(function() {
+function onThemeLightState() {
+	sessionStorage.setItem(storageKey, 0);
 	$(".theme-light").css({
 			"opacity" : 0,
 			"visibility": "hidden"
@@ -237,8 +316,36 @@ $(".theme-light").click(function() {
 			"opacity" : 1,
 			"visibility": "visible"
 		});
-});
-$(".theme-dark").click(function() {
+	$(".home").css({
+			"background-image": "url(./img/bg-home2.jpg)"
+		});
+	$(".signal").css({
+			"background-image": "url(./img/sign.png)"
+		});
+	$(".left-text").css({
+			"color": "#000"
+		});
+	$(".menu-icon").css({
+			"color": "#000"
+		});
+	$("li").css({
+			"color": "#000"
+		});
+	$(".smenu-line").css({
+			"background-color": "#000"
+		});
+	$("body").css({
+		"background-color": "#fff"
+	});
+	$(".font-theme").css({
+			"color": "#343A40"
+		});
+	$(".font-theme-content").css({
+			"color": "#6c757d"
+		});
+}
+function onThemeDarkState() {
+	sessionStorage.setItem(storageKey, 1);
 	$(".theme-dark").css({
 			"opacity" : 0,
 			"visibility": "hidden"
@@ -247,4 +354,33 @@ $(".theme-dark").click(function() {
 			"opacity" : 1,
 			"visibility": "visible"
 		});
-});
+	$(".home").css({
+			"background-image": "url(./img/bg-dark-home2.jpg)"
+		});
+	$(".signal").css({
+			"background-image": "url(./img/sign-dark.png)"
+		});
+	$(".left-text").css({
+			"color": "#fff"
+		});
+	$(".menu-icon").css({
+			"color": "#fff"
+		});
+	$("li").css({
+			"color": "#fff"
+		});
+	$(".smenu-line").css({
+			"background-color": "#fff"
+		});
+	$("body").css({
+		"background-color": "#222",
+	});
+	$(".font-theme").css({
+			"color": "#fff"
+		});
+	$(".font-theme-content").css({
+			"color": "rgb(192,192,192)"
+		});
+}
+$(".theme-light").click(onThemeLightState);
+$(".theme-dark").click(onThemeDarkState);
